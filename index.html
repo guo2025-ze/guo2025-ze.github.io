@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>澤教授的博客</title>
+    <title>🌸澤教授的博客</title>
     <style>
         body {
             max-width: 800px;
             margin: 0 auto;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', system-ui, sans-serif;
             padding: 20px;
             line-height: 1.6;
+            background: linear-gradient(135deg, #fff5f5 0%, #f0fff7 100%);
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #2d3436;
+            padding: 20px;
+            border-bottom: 3px solid #ff7675;
+            margin-bottom: 30px;
+        }
+        .post-list {
+            list-style: none;
+            padding: 0;
+        }
+        .post-list li {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .post-list a {
+            text-decoration: none;
+            color: #2d3436;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+        .post-list a:hover {
+            color: #ff7675;
         }
         footer {
-            margin-top: 40px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-            color: #666;
+            margin-top: 60px;
+            padding: 20px;
+            color: #636e72;
             text-align: center;
+            border-top: 2px solid #ffeaa7;
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">澤教授的博客</h1>
+    <h1>📚 澤教授的博客 🌸</h1>
     
-    <h2>文章列表</h2>
-    <ul>
-        <li><a href="sakura.html">赏樱花（2025-03-27）</a></li>
+    <h2>📃 文章列表</h2>
+    <ul class="post-list">
+        <li>
+            <a href="sakura.html">
+                <span class="emoji">🌸</span>
+                赏樱花（2025-03-27）
+            </a>
+        </li>
     </ul>
 
     <footer>
-        欢迎来到我的博客，创始于2025年3月30日
+        🎉 欢迎来到我的博客 🎉<br>
+        创始于2025年3月30日
     </footer>
 </body>
 </html>
