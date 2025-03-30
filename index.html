@@ -1,99 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>澤教授の知識森林</title>
+    <title>澤教授的博客</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
 </head>
-<body style="margin:0; background:#fbf5e6; min-height:100vh; padding-left:50px">
+<body>
+    <h1 style="text-align: center;">澤教授的博客</h1>
+    
+    <h2>文章列表</h2>
+    <ul>
+        <li><a href="sakura.html">赏樱花（2025-03-27）</a></li>
+    </ul>
 
-    <!-- 左侧装订线 -->
-    <div style="position:fixed; left:0; top:0; bottom:0; width:40px;
-              background: repeating-linear-gradient(180deg, #d4c4a8 0px, #d4c4a8 20px, #b8a58a 20px, #b8a58a 40px);
-              border-right:2px solid #9e8f78"></div>
-
-    <!-- 标题区 -->
-    <header style="background:#fffef9; box-shadow:0 2px 6px rgba(0,0,0,0.06); padding:1.2rem 0; position:relative">
-        <div style="max-width:800px; margin:0 auto; padding:0 20px">
-            <h1 style="margin:0; color:#5c4b3e; font-family: '楷体', cursive; font-size:1.8em">
-                🌸 澤教授の知識手账
-            </h1>
-            <p style="color:#9e8f78; margin:5px 0 0; font-size:0.9em">每日浇灌思考的幼苗</p>
-            <div style="position:absolute; right:20px; top:50%; transform:translateY(-50%); color:#d67b7b">📖</div>
-        </div>
-    </header>
-
-    <!-- 主体内容 -->
-    <main style="max-width:800px; margin:40px auto; padding:0 20px">
-        
-        <!-- 文章卡片1 -->
-        <article style="background:#fff; margin-bottom:30px; padding:25px;
-                      border-radius:6px; box-shadow:2px 2px 8px rgba(214,123,123,0.1);
-                      border:1px solid #eee2d3; position:relative">
-            <div style="position:absolute; right:-8px; top:-8px; width:20px; height:20px;
-                      background:#d67b7b; border-radius:50%;"></div>
-            <a href="post1.html" style="text-decoration:none; color:inherit">
-                <h2 style="margin:0; color:#5c4b3e; font-family: '微软雅黑'; 
-                          border-left:3px solid #d67b7b; padding-left:12px">
-                    📝 校园观察日记
-                </h2>
-                <div style="color:#9e8f78; font-size:0.9em; margin:8px 0">
-                    📅 2025-2-20 🌤️ 微风
-                </div>
-                <p style="color:#6c6359; line-height:1.7; margin:15px 0 0; text-indent:2em">
-                    操场东角的蚂蚁军团今日有特别行动，它们的行军路线暗藏几何之美...
-                </p>
-            </a>
-        </article>
-
-        <!-- 文章卡片2 -->
-        <article style="background:#fff; margin-bottom:30px; padding:25px;
-                      border-radius:6px; box-shadow:2px 2px 8px rgba(123,163,214,0.1);
-                      border:1px solid #d3e3ee; position:relative">
-            <div style="position:absolute; right:-8px; top:-8px; width:20px; height:20px;
-                      background:#7ba3d6; border-radius:50%;"></div>
-            <a href="post2.html" style="text-decoration:none; color:inherit">
-                <h2 style="margin:0; color:#5c4b3e; font-family: '微软雅黑'; 
-                          border-left:3px solid #7ba3d6; padding-left:12px">
-                    ✨ 数学解密手记
-                </h2>
-                <div style="color:#9e8f78; font-size:0.9em; margin:8px 0">
-                    📅 2025-2-18 🌧️ 雨后
-                </div>
-                <p style="color:#6c6359; line-height:1.7; margin:15px 0 0; text-indent:2em">
-                    追击问题的本质是时空的交汇，当速度差遇上初始距离...
-                </p>
-            </a>
-        </article>
-
-        <!-- 文章卡片3 -->
-        <article style="background:#fff; margin-bottom:30px; padding:25px;
-                      border-radius:6px; box-shadow:2px 2px 8px rgba(123,214,163,0.1);
-                      border:1px solid #d3eed3; position:relative">
-            <div style="position:absolute; right:-8px; top:-8px; width:20px; height:20px;
-                      background:#7bd6a3; border-radius:50%;"></div>
-            <a href="post3.html" style="text-decoration:none; color:inherit">
-                <h2 style="margin:0; color:#5c4b3e; font-family: '微软雅黑'; 
-                          border-left:3px solid #7bd6a3; padding-left:12px">
-                    🌱 植物生长日志
-                </h2>
-                <div style="color:#9e8f78; font-size:0.9em; margin:8px 0">
-                    📅 2024-10-15 ☀️ 晴好
-                </div>
-                <p style="color:#6c6359; line-height:1.7; margin:15px 0 0; text-indent:2em">
-                    窗台的绿萝在晨光中伸展新叶，光照时长与叶脉生长的神秘关联...
-                </p>
-            </a>
-        </article>
-    </main>
-
-    <!-- 页脚 -->
-    <footer style="border-top:1px solid #eee2d3; margin-top:50px; padding:30px 0">
-        <div style="max-width:800px; margin:0 auto; text-align:center; color:#9e8f78">
-            <p style="margin:0">🎋 欢迎来到我的知识森林</p>
-            <p style="margin:5px 0; font-size:0.9em">每片叶子都在诉说成长的故事</p>
-            <div style="font-size:1.2em; margin-top:10px">🌸</div>
-        </div>
+    <footer>
+        欢迎来到我的博客，创始于2025年3月30日
     </footer>
-
 </body>
 </html>
