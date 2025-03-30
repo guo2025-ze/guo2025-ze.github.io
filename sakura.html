@@ -80,5 +80,64 @@
         🎉 欢迎来到我的博客 🎉<br>
         创始于2025年3月30日
     </footer>
+    <!-- 在sakura.html的article标签内添加点赞功能 -->
+<article>
+    <!-- 原有内容保持不变 -->
+    
+    <div class="like-box">
+        <button onclick="toggleLike()" id="likeBtn">❤️ 点赞</button>
+        <span id="likeCount">0</span> 次点赞
+    </div>
+</article>
+
+<!-- 在sakura.html的style标签内添加新样式 -->
+<style>
+    .like-box {
+        margin-top: 30px;
+        text-align: center;
+        padding: 15px;
+        background: #fff;
+        border-radius: 8px;
+    }
+    #likeBtn {
+        background: #ff7675;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 16px;
+    }
+    #likeBtn:hover {
+        background: #ff5252;
+        transform: scale(1.05);
+    }
+    #likeCount {
+        color: #ff7675;
+        font-weight: bold;
+        margin-left: 8px;
+    }
+</style>
+
+<!-- 在sakura.html的body结束前添加脚本 -->
+<script>
+    // 为每个文章生成唯一ID（使用页面文件名）
+    const pageId = window.location.pathname.split('/').pop();
+
+    // 初始化点赞数
+    let likes = localStorage.getItem(pageId) || 0;
+    document.getElementById('likeCount').textContent = likes;
+
+    // 点赞功能
+    function toggleLike() {
+        likes = parseInt(likes) + 1;
+        localStorage.setItem(pageId, likes);
+        document.getElementById('likeCount').textContent = likes;
+        document.getElementById('likeBtn').innerHTML = '❤️ 已点赞';
+        document.getElementById('likeBtn').style.backgroundColor = '#ff5252';
+        document.getElementById('likeBtn').disabled = true;
+    }
+</script>
 </body>
 </html>
