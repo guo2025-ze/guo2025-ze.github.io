@@ -1,211 +1,31 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>HTML Editor - LDDGO.NET</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/styles/default.min.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>澤教授の小木屋</title>
 </head>
-<body>
+<body style="max-width:800px; margin:0 auto; padding:20px; font-family: 'Microsoft Yahei'">
+    <!-- 标题 -->
+    <h1 style="border-bottom:1px solid #ddd; padding-bottom:10px">📚 澤教授の小木屋</h1>
+    
+    <!-- 文章列表 -->
+    <div style="margin-top:30px">
+        <!-- 文章1 -->
+        <div style="margin-bottom:25px">
+            <a href="post1.html" style="text-decoration:none; color:#333; font-size:1.2em">
+                我的校园观察日记
+            </a>
+            <div style="color:#666; font-size:0.9em; margin-top:5px">2023-10-20</div>
+        </div>
 
-<p>&lt;!DOCTYPE html&gt;</p>
-<p>&lt;html lang="zh-CN"&gt;</p>
-<p>&lt;head&gt;</p>
-<p>&nbsp; &nbsp; &lt;meta charset="UTF-8"&gt;</p>
-<p>&nbsp; &nbsp; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p>&nbsp; &nbsp; &lt;title&gt;澤教授 | 个人博客&lt;/title&gt;</p>
-<p>&nbsp; &nbsp; &lt;style&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; :root {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --primary-color: #4a6fa5;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --secondary-color: #166088;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --accent-color: #4fc3f7;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --text-color: #333;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --light-bg: #f8f9fa;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; * {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-sizing: border-box;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; body {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.6;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--text-color);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: var(--light-bg);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1200px;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0 20px;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; header {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem 0;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 2rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 0 0 10px 10px;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; header h1 {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 2.5rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 0.5rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; header p {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.1rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; opacity: 0.9;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .post {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 8px;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 2rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: transform 0.3s ease, box-shadow 0.3s ease;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .post:hover {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transform: translateY(-5px);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .post h2 {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--primary-color);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 1rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.8rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .post p {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 1.5rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.1rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .post-meta {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #666;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 0.9rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 1.5rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding-bottom: 1rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-bottom: 1px solid #eee;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .like-btn {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: var(--accent-color);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: none;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0.5rem 1rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 20px;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 0.5rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 600;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: background-color 0.3s ease;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .like-btn:hover {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: var(--secondary-color);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; .like-btn.liked {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: #e91e63;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; footer {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem 0;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #666;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 2rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-top: 1px solid #eee;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; @media (max-width: 768px) {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; header h1 {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 2rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .post {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1.5rem;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &lt;/style&gt;</p>
-<p>&lt;/head&gt;</p>
-<p>&lt;body&gt;</p>
-<p>&nbsp; &nbsp; &lt;header&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;澤教授&lt;/h1&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;分享知识 &middot; 记录思考 &middot; 探索世界&lt;/p&gt;</p>
-<p>&nbsp; &nbsp; &lt;/header&gt;</p>
-<p>&nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &lt;main&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;article class="post"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="post-meta"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;2023年11月15日&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;阅读量: 256&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;如何高效学习编程&lt;/h2&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;在这个数字化时代，编程已经成为一项重要的技能。本文将分享我个人学习编程的经验和方法，希望能帮助初学者少走弯路...&lt;/p&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class="like-btn" onclick="toggleLike(this)"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;👍&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class="like-count"&gt;42&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/article&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;article class="post"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="post-meta"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;2023年10月28日&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;阅读量: 189&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;我的阅读书单分享&lt;/h2&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;阅读是拓展视野的最佳方式。今天我想分享过去半年对我影响最大的5本书，涵盖科技、哲学和个人成长等领域...&lt;/p&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class="like-btn" onclick="toggleLike(this)"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;👍&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class="like-count"&gt;28&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/article&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;article class="post"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="post-meta"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;2023年9月12日&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;阅读量: 324&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;人工智能的未来展望&lt;/h2&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;人工智能正在改变我们的生活方式。本文探讨AI技术的发展现状，以及未来可能对社会产生的深远影响...&lt;/p&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class="like-btn" onclick="toggleLike(this)"&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;👍&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class="like-count"&gt;56&lt;/span&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/article&gt;</p>
-<p>&nbsp; &nbsp; &lt;/main&gt;</p>
-<p>&nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &lt;footer&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&copy; 2023 澤教授的个人博客 &middot; 保留所有权利&lt;/p&gt;</p>
-<p>&nbsp; &nbsp; &lt;/footer&gt;</p>
-<p>&nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &lt;script&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; function toggleLike(button) {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const likeCount = button.querySelector('.like-count');</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; let count = parseInt(likeCount.textContent);</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (button.classList.contains('liked')) {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; count--;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; button.classList.remove('liked');</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; button.innerHTML = '&lt;span&gt;👍&lt;/span&gt;&lt;span class="like-count"&gt;' + count + '&lt;/span&gt;';</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; count++;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; button.classList.add('liked');</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; button.innerHTML = '&lt;span&gt;👍&lt;/span&gt;&lt;span class="like-count"&gt;' + count + '&lt;/span&gt;';</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &lt;/script&gt;</p>
-<p>&lt;/body&gt;</p>
-<p>&lt;/html&gt;</p>
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js" type="text/javascript"></script>
-<script type="text/javascript">hljs.highlightAll();</script>
+        <!-- 文章2 -->
+        <div style="margin-bottom:25px">
+            <a href="post2.html" style="text-decoration:none; color:#333; font-size:1.2em">
+                数学难题破解心得
+            </a>
+            <div style="color:#666; font-size:0.9em; margin-top:5px">2023-10-18</div>
+        </div>
+    </div>
 </body>
 </html>
