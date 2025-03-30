@@ -1,74 +1,60 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>澤教授の知識森林</title>
+    <title>澤教授の博客</title>
 </head>
-<body style="margin:0; background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%); min-height:100vh">
-    
-    <!-- 标题区 -->
-    <header style="background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:1.5rem 0">
-        <div style="max-width:800px; margin:0 auto; padding:0 20px">
-            <h1 style="margin:0; color:#2c3e50; font-family: 'Segoe UI', sans-serif">
-                🌳 澤教授の知識森林
-            </h1>
-            <p style="color:#7f8c8d; margin:5px 0 0; font-size:0.9em">记录每一片思考的绿叶</p>
-        </div>
-    </header>
+<body style="margin:0; background:#f7f3e8; min-height:100vh; padding-left:60px">
 
-    <!-- 主体内容 -->
-    <main style="max-width:800px; margin:40px auto; padding:0 20px">
+    <!-- 左侧装订线 -->
+    <div style="position:fixed; left:0; top:0; bottom:0; width:50px;
+              background: repeating-linear-gradient(180deg, #d1c0a3 0px, #d1c0a3 20px, #b8a58a 20px, #b8a58a 40px);
+              border-right:3px solid #a09076"></div>
+
+    <!-- 主内容 -->
+    <div style="max-width:680px; margin:40px auto; padding:0 20px 100px">
         
-        <!-- 文章卡片1 -->
-        <article style="background:white; border-radius:12px; padding:25px; margin-bottom:25px;
-                      box-shadow:0 3px 6px rgba(0,0,0,0.08); transition:0.3s">
-            <a href="post1.html" style="text-decoration:none; color:inherit">
-                <h2 style="margin:0; color:#2c3e50; font-family: 'Segoe UI', sans-serif">
-                    我的校园观察日记
+        <!-- 封面 -->
+        <header style="text-align:center; margin-bottom:50px">
+            <div style="font-size:2.5em; color:#d67b7b">📖</div>
+            <h1 style="margin:10px 0; color:#4a4a4a; font-family:'楷体', cursive; 
+                      letter-spacing:2px; text-shadow:1px 1px 2px #ddd">
+                春日手记
+            </h1>
+        </header>
+
+        <!-- 日记卡片 -->
+        <article style="background:#fff; padding:30px; margin-bottom:30px;
+                      border:1px solid #e0d5c3; position:relative;
+                      box-shadow:3px 3px 5px rgba(0,0,0,0.05)">
+            <div style="position:absolute; left:-25px; top:15px; width:20px; height:20px;
+                      background:#d67b7b; border-radius:50%"></div>
+            <a href="post.html" style="text-decoration:none; color:inherit">
+                <div style="color:#b3a089; font-size:0.9em; margin-bottom:8px">
+                    📅 2025.3.27 🌸 天气晴
+                </div>
+                <h2 style="margin:0; color:#5c4b3e; font-family:'微软雅黑';
+                          border-left:3px solid #d67b7b; padding-left:12px">
+                    鼋头渚的樱花来信
                 </h2>
-                <div style="color:#95a5a6; font-size:0.9em; margin:8px 0">2023-10-20</div>
-                <p style="color:#34495e; line-height:1.6; margin:15px 0 0">
-                    今天在操场发现一群蚂蚁正在搬运饼干屑，它们排着整齐的队伍...
+                <p style="color:#6c6359; line-height:1.6; margin:15px 0;
+                        border-bottom:1px dashed #e0d5c3; padding-bottom:15px">
+                    当粉色的云霞落满太湖之滨，我知道春天正在书写她的诗篇...
                 </p>
+                <div style="color:#b3a089; text-align:right; font-size:0.9em">
+                    点击展开完整日记 →
+                </div>
             </a>
         </article>
 
-        <!-- 文章卡片2 -->
-        <article style="background:white; border-radius:12px; padding:25px; margin-bottom:25px;
-                      box-shadow:0 3px 6px rgba(0,0,0,0.08); transition:0.3s">
-            <a href="post2.html" style="text-decoration:none; color:inherit">
-                <h2 style="margin:0; color:#2c3e50; font-family: 'Segoe UI', sans-serif">
-                    数学难题破解心得
-                </h2>
-                <div style="color:#95a5a6; font-size:0.9em; margin:8px 0">2023-10-18</div>
-                <p style="color:#34495e; line-height:1.6; margin:15px 0 0">
-                    追击问题的解法关键在于速度差与初始距离的关系...
-                </p>
-            </a>
-        </article>
-
-        <!-- 新增文章示例 -->
-        <article style="background:white; border-radius:12px; padding:25px; margin-bottom:25px;
-                      box-shadow:0 3px 6px rgba(0,0,0,0.08); transition:0.3s">
-            <a href="post3.html" style="text-decoration:none; color:inherit">
-                <h2 style="margin:0; color:#2c3e50; font-family: 'Segoe UI', sans-serif">
-                    实验报告：植物生长观察
-                </h2>
-                <div style="color:#95a5a6; font-size:0.9em; margin:8px 0">2023-10-15</div>
-                <p style="color:#34495e; line-height:1.6; margin:15px 0 0">
-                    通过两周的观察记录了绿萝在不同光照条件下的生长速度差异...
-                </p>
-            </a>
-        </article>
-    </main>
-
-    <!-- 页脚 -->
-    <footer style="border-top:1px solid #ecf0f1; margin-top:50px; padding:30px 0">
-        <div style="max-width:800px; margin:0 auto; text-align:center; color:#7f8c8d">
-            <p style="margin:0">© 2023 澤教授の知識森林</p>
-            <p style="margin:5px 0; font-size:0.9em">用文字浇灌成长的树苗</p>
-        </div>
-    </footer>
-
+        <!-- 页脚 -->
+        <footer style="text-align:center; margin-top:60px; color:#a0988c;
+                     border-top:1px solid #e0d5c3; padding-top:20px">
+            <div>欢迎来到我的博客</div>
+            <div style="font-size:0.9em; margin-top:5px">始于2025年3月</div>
+            <div style="font-size:1.5em; margin-top:10px">🌸</div>
+        </footer>
+    </div>
 </body>
 </html>
