@@ -6,68 +6,88 @@
         body {
             max-width: 800px;
             margin: 0 auto;
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             padding: 20px;
             line-height: 1.6;
-            background: linear-gradient(135deg, #fff5f5 0%, #f0fff7 100%);
+            background: linear-gradient(135deg, #FFF3E0 0%, #FCE4EC 50%, #E0F7FA 100%);
             min-height: 100vh;
+            background-attachment: fixed;
         }
         h1 {
             text-align: center;
-            color: #2d3436;
-            padding: 20px;
-            border-bottom: 3px solid #ff7675;
-            margin-bottom: 30px;
+            color: #E91E63;
+            padding: 25px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .post-list {
             list-style: none;
             padding: 0;
+            margin: 40px 0;
         }
         .post-list li {
-            margin: 15px 0;
-            padding: 15px;
-            background: rgba(255,255,255,0.9);
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            transition: transform 0.3s;
+            border-left: 5px solid #FFB74D;
+        }
+        .post-list li:hover {
+            transform: translateX(10px);
         }
         .post-list a {
             text-decoration: none;
-            color: #2d3436;
-            font-weight: 500;
-            font-size: 1.1em;
-        }
-        .post-list a:hover {
-            color: #ff7675;
+            color: #4A148C;
+            font-size: 1.2em;
+            display: block;
         }
         footer {
             margin-top: 60px;
-            padding: 20px;
-            color: #636e72;
+            padding: 25px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
             text-align: center;
-            border-top: 2px solid #ffeaa7;
+            color: #7E57C2;
+            font-size: 0.9em;
         }
         .emoji {
-            font-size: 1.2em;
-            margin-right: 5px;
+            font-size: 1.4em;
+            margin-right: 10px;
         }
+        .deco {
+            position: fixed;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        .deco-1 { left: 5%; top: 20%; font-size: 80px; }
+        .deco-2 { right: 10%; top: 40%; font-size: 60px; }
+        .deco-3 { left: 15%; bottom: 30%; font-size: 100px; }
     </style>
 </head>
 <body>
-    <h1>📚 澤教授的博客 🌸</h1>
+    <div class="deco deco-1">🌸</div>
+    <div class="deco deco-2">📚</div>
+    <div class="deco deco-3">✨</div>
+
+    <h1>📚 澤教授的魔法博客 ✨</h1>
     
-    <h2>📃 文章列表</h2>
+    <h2>📃 文章宝典</h2>
     <ul class="post-list">
         <li>
             <a href="sakura.html">
                 <span class="emoji">🌸</span>
-                赏樱花（2025-03-27）
+                【樱花物语】春日的粉色约定（2025-03-27）
             </a>
         </li>
     </ul>
 
     <footer>
-        🎉 欢迎来到我的博客 🎉<br>
-        创始于2025年3月30日
+        🎀 欢迎来到我的梦幻小窝 🎀<br>
+        🗓️ 创始于2025年3月30日<br>
+        🌟 记录成长的每一刻 ✨
     </footer>
 </body>
 </html>
