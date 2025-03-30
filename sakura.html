@@ -1,143 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>🌸赏樱花 - 澤教授的博客</title>
+    <title>🌸樱花物语 - 澤教授的博客</title>
     <style>
         body {
             max-width: 800px;
             margin: 0 auto;
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             padding: 20px;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #fff5f5 0%, #f0fff7 100%);
+            line-height: 1.7;
+            background: linear-gradient(135deg, #FFF3E0 0%, #FCE4EC 50%, #E0F7FA 100%);
             min-height: 100vh;
+            background-attachment: fixed;
         }
         h1 {
             text-align: center;
-            color: #2d3436;
-            padding: 20px;
-            border-bottom: 3px solid #ff7675;
-            margin-bottom: 30px;
+            color: #E91E63;
+            padding: 25px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         article {
-            background: rgba(255,255,255,0.9);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background: rgba(255,255,255,0.95);
+            padding: 30px 40px;
+            border-radius: 20px;
+            position: relative;
+            border-left: 5px solid #FFB74D;
         }
         .date {
-            color: #636e72;
-            font-size: 0.95em;
-            margin: -10px 0 20px;
+            color: #7E57C2;
+            font-size: 1em;
+            margin: -10px 0 25px;
             display: block;
-        }
-        .emoji {
-            font-size: 1.2em;
-            margin: 0 3px;
         }
         footer {
             margin-top: 60px;
-            padding: 20px;
-            color: #636e72;
+            padding: 25px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
             text-align: center;
-            border-top: 2px solid #ffeaa7;
+            color: #7E57C2;
         }
         ul, ol {
-            padding-left: 25px;
+            padding-left: 30px;
+            margin: 20px 0;
         }
         li {
-            margin: 10px 0;
+            margin: 15px 0;
+            padding-left: 10px;
+            border-left: 3px solid #FFB74D;
+        }
+        .deco {
+            position: fixed;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        .deco-1 { right: 5%; top: 20%; font-size: 80px; }
+        .deco-2 { left: 10%; top: 50%; font-size: 60px; }
+        .deco-3 { right: 15%; bottom: 20%; font-size: 100px; }
+        .section-title {
+            color: #E91E63;
+            border-bottom: 2px dashed #FFB74D;
+            padding-bottom: 5px;
+            margin: 25px 0 15px;
+        }
+        .highlight {
+            background: linear-gradient(transparent 60%, #FFF59D 60%);
+            padding: 0 3px;
         }
     </style>
 </head>
 <body>
-    <h1>📖 澤教授的博客 🌸</h1>
+    <div class="deco deco-1">🌸</div>
+    <div class="deco deco-2">📷</div>
+    <div class="deco deco-3">🎨</div>
+
+    <h1>🌸 樱花物语 ✨</h1>
     
     <article>
-        <h2>🌸 赏樱花 📷</h2>
-        <span class="date">📅 2025年3月27日</span>
+        <h2>🌸 春日的粉色约定 📅</h2>
+        <span class="date">🗓️ 2025年3月27日 ☁️ 多云转晴</span>
         
-        <p>三月的春风轻轻拂过，粉白的樱花如同云霞般绽放在枝头。今天学校组织我们去公园赏樱，这是我第一次真正感受樱花季的美。</p>
+        <p>🍃 三月的春风轻轻拂过，粉白的樱花如同云霞般绽放在枝头。<span class="highlight">今天学校组织我们去公园赏樱，这是我第一次真正感受樱花季的美妙时刻！</span></p>
         
-        <p>🌸 樱花树下，花瓣像雪花一样飘落。同学们有的写生，有的拍照，还有的在花瓣雨中追逐嬉戏。老师告诉我们，樱花花期很短，从盛开到凋零只有一周左右，这种转瞬即逝的美正是它最动人的地方。</p>
+        <p>🌸 樱花树下，花瓣像雪花一样飘落。同学们有的写生🎨，有的拍照📸，还有的在花瓣雨中追逐嬉戏🏃♂️。老师告诉我们，樱花花期很短，从盛开到凋零只有一周左右，<span class="highlight">这种转瞬即逝的美正是它最动人的地方。</span></p>
         
-        <h3>🚩 推荐赏樱地点：</h3>
+        <h3 class="section-title">🚩 推荐赏樱圣地 🌸</h3>
         <ul>
-            <li>🏞️ 城市中央金匮公园 - 樱花大道</li>
-            <li>🌳 鼋头渚 - 早樱区</li>
-            <li>🌉 高浪路步道 - 夜樱观赏点</li>
+            <li>🏞️ 城市中央公园 - 长达2km的樱花大道 🌸→🌸→🌸</li>
+            <li>🌳 西山植物园 - 早樱秘境 🌸➕🐦鸟语花香</li>
+            <li>🌉 河边步道 - 夜樱灯光秀 🌸✨🌙</li>
         </ul>
         
-        <h3>💡 赏樱小贴士：</h3>
+        <h3 class="section-title">💡 赏樱必备指南 🎒</h3>
         <ol>
-            <li>⏰ 早上人少适合拍照</li>
-            <li>🧺 带上野餐垫享受樱花下午茶</li>
-            <li>🌱 爱护树木不摇晃树枝</li>
+            <li>⏰ 清晨攻略：6:00-8:00 📸 人少光线柔</li>
+            <li>🧺 野餐套装：樱花和菓子 🍡➕抹茶拿铁 🍵</li>
+            <li>📌 文明守则：三不原则 🙅♂️不摇树 🙅♀️不折枝 🙅不乱丢</li>
         </ol>
+
+        <div style="text-align: center; margin: 40px 0;">
+            🌸🌸🌸<br>
+            ✨ 花有重开日 ✨<br>
+            🌸 人无再少年 🌸<br>
+            🌸🌸🌸
+        </div>
     </article>
 
     <footer>
-        🎉 欢迎来到我的博客 🎉<br>
-        创始于2025年3月30日
+        🎀 欢迎常来我的梦幻小窝 🎀<br>
+        📮 留言请戳：<a href="mailto:example@email.com" style="color: #E91E63;">📧 澤教授信箱</a><br>
+        🗓️ 创始于2025年3月30日
     </footer>
-    <!-- 在sakura.html的article标签内添加点赞功能 -->
-<article>
-    <!-- 原有内容保持不变 -->
-    
-    <div class="like-box">
-        <button onclick="toggleLike()" id="likeBtn">❤️ 点赞</button>
-        <span id="likeCount">0</span> 次点赞
-    </div>
-</article>
-
-<!-- 在sakura.html的style标签内添加新样式 -->
-<style>
-    .like-box {
-        margin-top: 30px;
-        text-align: center;
-        padding: 15px;
-        background: #fff;
-        border-radius: 8px;
-    }
-    #likeBtn {
-        background: #ff7675;
-        color: white;
-        border: none;
-        padding: 8px 20px;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: all 0.3s;
-        font-size: 16px;
-    }
-    #likeBtn:hover {
-        background: #ff5252;
-        transform: scale(1.05);
-    }
-    #likeCount {
-        color: #ff7675;
-        font-weight: bold;
-        margin-left: 8px;
-    }
-</style>
-
-<!-- 在sakura.html的body结束前添加脚本 -->
-<script>
-    // 为每个文章生成唯一ID（使用页面文件名）
-    const pageId = window.location.pathname.split('/').pop();
-
-    // 初始化点赞数
-    let likes = localStorage.getItem(pageId) || 0;
-    document.getElementById('likeCount').textContent = likes;
-
-    // 点赞功能
-    function toggleLike() {
-        likes = parseInt(likes) + 1;
-        localStorage.setItem(pageId, likes);
-        document.getElementById('likeCount').textContent = likes;
-        document.getElementById('likeBtn').innerHTML = '❤️ 已点赞';
-        document.getElementById('likeBtn').style.backgroundColor = '#ff5252';
-        document.getElementById('likeBtn').disabled = true;
-    }
-</script>
 </body>
 </html>
